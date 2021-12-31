@@ -1,7 +1,9 @@
 {
     "type": "module",
     "scripts": {
-        "start": "node ./bin/harmony-magentatv-bridge.js"
+        "start": "node ./bin/harmony-magentatv-bridge.js",
+        "lint": "npx eslint .",
+        "lint:fix": "npx eslint --fix ."
     },
     "dependencies": {
         "dotenv": "^10.0.0",
