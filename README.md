@@ -4,6 +4,9 @@
 
 # Getting started
 
+You have multiple options to run this service:
+
+1. Run it from source (needs nodejs installed)
 
 ```bash
 git clone https://github.com/dschmidt/harmony-magentatv-bridge
@@ -12,6 +15,15 @@ cd harmony-magentatv-bridge
 cp .env.dist .env
 npm ci
 npm start
+```
+
+2. Run it from source (but in docker)
+```bash
+git clone https://github.com/dschmidt/harmony-magentatv-bridge
+cd harmony-magentatv-bridge
+# Copy .env.dist to .env and make sure at least `EXTERNAL_IP`, `MAGENTATV_IP` and `USER_ID` are correctly set in .env
+cp .env.dist .env
+docker-compose up
 ```
 
 ## Based on
