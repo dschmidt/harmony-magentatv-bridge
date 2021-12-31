@@ -15,7 +15,7 @@ import 'dotenv/config'
     magentaTvPort: parseInt(env.MAGENTATV_PORT) || 8081,
     magentaTvIp: env.MAGENTATV_IP,
     localPort: parseInt(env.LOCAL_PORT) || 48124,
-    localIp: env.LOCAL_IP,
+    localIp: !!env.LOCAL_IP ? env.LOCAL_IP : '0.0.0.0',
     terminalId: env.TERMINAL_ID || randomUUID(),
     userId: env.USER_ID,
   }
