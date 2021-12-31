@@ -8,6 +8,8 @@ The Roku integration in Harmony is rather rudimentary, the biggest shortcoming i
 
 This needs to be solved by Logitech and Telekom in proper direct integration ... but as nothing happened in that regard over the last year, this project was created.
 
+Assigning keys on the hardware remote does not (!) change the assigned keys in the action in your mobile app, you always need to select the Roku device and cannot use the activity for switching channels.
+
 ## Getting started
 
 There are multiple steps involved in getting this to work in your home network.
