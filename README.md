@@ -2,6 +2,12 @@
 
 `harmony-magentatv-bridge` is a little service that pretends to be a Roku server which can be controlled by a Logitech Harmony Remote and forwards actions it receives to the Telekom MagentaTV box. It's meant to be an easy to setup alternative to using the more powerful [harmony-span](https://github.com/AShifter/harmony-span) and [iobroker.magentatv](https://github.com/h3llh0und/iobroker.magentatv) which this is based on.
 
+## Limitations
+
+The Roku integration in Harmony is rather rudimentary, the biggest shortcoming is that it does not provide number keys. Even if it did, it's not possible to assign arbitrary devices/keys to the number keys on the touch screen. So this basically makes more or less all the hardware keys work, but you cannot jump to a specific channel by number or use channel icons to access them.
+
+This needs to be solved by Logitech and Telekom in proper direct integration ... but as nothing happened in that regard over the last year, this project was created.
+
 ## Getting started
 
 There are multiple steps involved in getting this to work in your home network.
