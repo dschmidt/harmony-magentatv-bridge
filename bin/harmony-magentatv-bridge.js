@@ -4,7 +4,7 @@ import { startSsdpServer } from '../lib/ssdp.js'
 import { createExpressApp, startExpressServer } from '../lib/express.js'
 import MagentaTvRemote from '../lib/magentatv-remote.js'
 import RokuServer from '../lib/roku-server.js'
-import { randomUUID } from 'crypto'
+import { randomUUID, createHash } from 'crypto'
 import 'dotenv/config'
 
 // Make eslint happy and wrap top level await in async function
@@ -17,7 +17,7 @@ import 'dotenv/config'
     localPort: parseInt(env.LOCAL_PORT) || 48124,
     localIp: !!env.LOCAL_IP ? env.LOCAL_IP : '0.0.0.0',
     terminalId: env.TERMINAL_ID || randomUUID(),
-    userId: env.USER_ID,
+    userHash: !!env.USER_HASH ? env.USER_HASH || createHash('md5').update(env.USER_ID).digest("hex").toUpperCase(),
   }
 
   config.externalPort = parseInt(env.EXTERNAL_PORT) || config.localPort
