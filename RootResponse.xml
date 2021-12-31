@@ -1,0 +1,13 @@
+<!-- This file contains the response that the Harmony Hub will receive when asking Harmony Span what kind of Roku device it is. -->
+<!-- You shouldn't have to change anything in here (other than the UUID if you have multiple HarmonySpan instances on the network (?)) --> 
+<!-- and we have absolutely no idea what will happen if you do mess around in here, so don't! :^) -->
+<root xmlns="urn:schemas-upnp-org:device-1-0">
+<device>
+    <friendlyName>Webhook Bridge</friendlyName>
+    <manufacturer>Roku</manufacturer>
+    <manufacturerURL>http://www.github.com/ashifter/harmony-span/</manufacturerURL>
+    <modelName>Streaming Stick+</modelName>
+    <serialNumber>HARMONY-FREEDOM</serialNumber>
+    <UDN>uuid:00000000-1337-0000-1337-000000000000</UDN>
+    </device>
+</root>
